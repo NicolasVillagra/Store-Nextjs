@@ -1,11 +1,14 @@
-import React from 'react'
-import {Button} from '@nextui-org/button'; 
+'use client'
+
+import Category from "@/components/Category"
+import Hero from "@/components/Hero"
 
 const page = () => {
+
   return (
     <div>
-    <h1>HOLA MUNDO</h1>
-    <Button>Click me</Button>
+      <Hero/>
+      <Category/>
     </div>
   )
 }

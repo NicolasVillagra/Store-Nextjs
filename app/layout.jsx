@@ -1,4 +1,4 @@
-import Nav from "./Navbar";
+
 import {Providers} from "./providers";
 import './global.css'
 
@@ -8,10 +8,9 @@ export const metadata = {
 }
 export default function RootLayout({children}) {
   return (
-    <html lang="en" className='dark'>
+    <html lang="en" className='bg-white'>
       <body>
         <Providers>
-        <Nav/>
           {children}
         </Providers>
       </body>
