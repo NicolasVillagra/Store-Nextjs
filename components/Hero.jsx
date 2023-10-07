@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -55,7 +55,7 @@ const Hero = () => {
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -101,19 +101,20 @@ const Hero = () => {
       </Dialog>
     </header>
 
-    <div className="relative">
+    <div className="relative bg-gray-100 h-96">
         <video
           autoPlay
           muted
           loop
-          className="w-full object-cover absolute inset-0"
+          playsInline
+          className="w-full object-cover absolute inset-0 h-96"
         >
           <source src="/video.mp4" type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
         </video>
 
-        <div className="relative z-10">
-          <div className="mx-auto max-w-2xl py-12 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 bg-black/70 h-96">
+          <div className="mx-auto max-w-2xl py-12 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 ">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Anunciamos nuestra próxima colección.{' '}
@@ -123,7 +124,7 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center mt-12">
               <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-white">
                 Moda para enriquecer tu estilo
               </h1>
