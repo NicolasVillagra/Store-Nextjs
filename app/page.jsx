@@ -3,6 +3,7 @@
 import Category from "@/components/Category"
 import Hero from "@/components/Hero"
 import Products from "@/components/Products"
+import Promo from "@/components/Promo"
 
 const page = () => {
 
@@ -10,7 +11,7 @@ const page = () => {
     <div>
       <Hero/>
       <Category/>
-      <Products/>
+      <Promo/>
     </div>
   )
 }
