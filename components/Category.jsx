@@ -4,7 +4,7 @@ const callouts = [
       description: 'Descubre nuestra colección para hombres',
       imageSrc: 'https://images.unsplash.com/photo-1572897938832-fcce7f53ccaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80',
       imageAlt: 'Ropa para hombre en una tienda',
-      href: '#',
+      href: 'manCategory',
     },
     {
       name: 'Ropa para Mujer',
